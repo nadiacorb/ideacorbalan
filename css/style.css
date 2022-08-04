@@ -74,7 +74,13 @@ ul{
     list-style: none;
 }
 
+.viñeta{
+    transition: filter 1s;
+}
 
+.viñeta:hover {
+    filter: opacity(60%);
+}
 
 /*****************+* MOBILE ********************/
 
@@ -88,6 +94,14 @@ ul{
     background-color: #C5B4AE;
     border: none;
     margin: 20px 3px 0px 0px;
+    transition: all 2s;
+    color: #F3F3F3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #856C5B;
 }
     
 /* GRID */
@@ -240,6 +254,9 @@ nav ul li a {
 
 /* Main nosotros */
 
+.gradianteAbajo__mobile {
+    background-image: linear-gradient(to bottom, #C5B1Aa, white);
+}
 
 .content__nosotros {
     display: flex;
@@ -613,6 +630,19 @@ footer p {
     background-color: #C5B4AE;
     border: none;
     margin: 20px 0px;
+    transition: all 2s;
+    color: #F3F3F3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #856C5B;
+}
+
+
+.gradianteAbajo__desktop {
+    background-image: linear-gradient(to bottom, #F3F3F3, white);
 }
     
     
@@ -849,9 +879,6 @@ nav ul li a {
     margin-top: 100px;
 }
 
-.fondo {
-    background-color: white;
-}
 
 .content__video video {
     width: 100%;
@@ -903,6 +930,7 @@ nav ul li a {
 .section__texto {
     width: 40%;
     padding: 40px;
+    background-color: white;
 }
 
 .section__titulo {

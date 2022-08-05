@@ -18,7 +18,7 @@
 
 <div id="grid">
     <header>
-        <a href="../index.html">Logo</a>
+        <a class="text-white" href="../index.html">Logo</a>
     </header>
     <!------------------- FIN DE HEADER------------------->
 
@@ -26,19 +26,19 @@
    <nav>
         <ul>
             <li>
-                <a href="../index.html">Inicio</a>
+                <a class="text-white" href="../index.html">Inicio</a>
             </li>
             <li>
-                <a href="../pages/habitaciones.html">Habitaciones</a>
+                <a class="text-white" href="../pages/habitaciones.html">Habitaciones</a>
             </li>
             <li>
-                <a href="../pages/actividades.html">Actividades</a>
+                <a class="text-white" href="../pages/actividades.html">Actividades</a>
             </li>
             <li>
-                <a href="../pages/nosotros.html">Nosotros</a>
+                <a class="text-white" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li>
-                <a href="../pages/contacto.html">Contacto</a>
+                <a class="text-white" href="../pages/contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -65,23 +65,20 @@
                             <h2 class="section__titulo textoCentrado bordeCurvo">
                                 Contacto
                             </h2>
-                            <form action="" class="form__columna">
-                                <div class="form__item">
-                                    <label for="Nombre">Nombre</label>
-                                    <input type="text" name="nombre">
+                            <form class="form__column">
+                                  <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
                                 </div>
-                                <div class="form__item">
-                                    <label for="Email">Email</label>
-                                    <input type="email" name="email">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com">
                                 </div>
-                                <div class="form__item">
-                                    <label for="Consulta">Consulta</label>
-                                    <textarea name="consulta" cols="40" rows="3">Escribir mensaje</textarea>
+                                <div class="form-group">
+                                    <label for="consulta">Consulta</label>
+                                    <textarea class="form-control" id="consulta" rows="2" cols="40"></textarea>
                                 </div>
-                                <div class="form__item">
-                                    <input type="reset" value="Limpiar" class="btn bordeCurvo">
-                                    <input type="submit" value="Enviar" class="btn bordeCurvo">
-                                </div>
+                                <button type="submit" class="btn btn-secondary text-white">Enviar</button>
                             </form>
                         </div>
                         <div>
@@ -137,7 +134,7 @@
 
     <!------------------- INICIO DE FOOTER ------------------->
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </footer>
     <!------------------- FIN DE FOOTER ------------------->
 </div>

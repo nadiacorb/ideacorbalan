@@ -276,8 +276,8 @@ nav ul li a {
 }
 
 .medioBox {
-    width: 60%;
-    height: 420px;
+    width: 80%;
+    height: 550px;
 }
 
 .superpuesto {
@@ -409,7 +409,7 @@ nav ul li a {
 .formulario {
     background-color: #F3F3F3;
     padding: 15px;
-    height: 400px;
+    height: 550px;
 }
 
 .formulario h2 {
@@ -818,7 +818,7 @@ nav ul li a {
 
 .medioBox {
     width: 30%;
-    height: 350px;
+    height: 500px;
 }
 
 .superpuesto {
@@ -1098,7 +1098,8 @@ form input , select, textarea {
 }
 
 .habitacion__item ul li img {
-    width: 5%;
+    width: 25px;
+    height: 25px;
     margin-right: 15px;
 }
 

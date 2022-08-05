@@ -18,7 +18,7 @@
 
    <div id="grid">
          <header>
-            <a href="index.html">Logo</a>
+            <a class="text-white" href="index.html">Logo</a>
         </header>
         <!------------------- FIN DE HEADER------------------->
         
@@ -26,19 +26,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a class="text-white" href="index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="pages/habitaciones.html">Habitaciones</a>
+                    <a class="text-white" href="pages/habitaciones.html">Habitaciones</a>
                 </li>
                 <li>
-                    <a href="pages/actividades.html">Actividades</a>
+                    <a class="text-white" href="pages/actividades.html">Actividades</a>
                 </li>
                 <li>
-                    <a href="pages/nosotros.html">Nosotros</a>
+                    <a class="text-white" href="pages/nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="pages/contacto.html">Contacto</a>
+                    <a class="text-white" href="pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -106,20 +106,39 @@
             <!------------------- INICIO SECTION HABITACIONES ------------------->
             <section class="gradianteAbajo__desktop">
                 <article>
-                    <div class="carrusel">
-                        <ul>
-                            <li>
-                                <img src="assets/img/habitacion1.jpg" class="img__tamañoMedio">
-                            </li>
-                            <li>
-                                <img src="assets/img/habitacion2.jpg" class="img__tamañoMedio">
-                            </li>
-                            <li>
-                                <img src="assets/img/habitacion3.jpg" class="img__tamañoMedio">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section__texto">
+
+<div class="container-fluid">
+    <div class="row">
+                    <div class="col-lg-8">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-interval="2000" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/img/habitacion1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/habitacion2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/habitacion3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </button>
+            </div>
+            </div>
+            <div class="col-lg-4">
+                <div>
                         <h2 class="section__titulo textoCentrado bordeCurvo">Habitaciones</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -154,9 +173,12 @@
                             </ul>
                         </div>
         
-                        <button class="btn bordeCurvo">
-                            <a href="pages/habitaciones.html">Ver más</a>
+                        <button type="button" class="btn bordeCurvo btn-secondary">
+                            <a class="text-white" href="pages/habitaciones.html">Ver más</a>
                         </button>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                 </article>
         
@@ -199,8 +221,8 @@
                                 </select>
                             </div>
                             <div class="form__item">
-                                <input type="reset" value="Limpiar" class="btn bordeCurvo">
-                                <input type="submit" value="Enviar" class="btn bordeCurvo">
+                                <input type="reset" value="Limpiar" class="btn bordeCurvo btn-secondary text-white">
+                                <input type="submit" value="Enviar" class="btn bordeCurvo btn-secondary text-white">
                             </div>
                         </div>
                     </form>
@@ -218,8 +240,8 @@
                         </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <button class="btn bordeCurvo">
-                            <a href="pages/actividades.html">Ver más</a>
+                        <button type="button" class="btn bordeCurvo btn-secondary">
+                            <a class="text-white" href="pages/actividades.html">Ver más</a>
                         </button>
                     </div>
                     <div class="box__img">
@@ -232,8 +254,8 @@
                     <h3 class="uppercase">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                     </h3>
-                    <button class="btn bordeCurvo">
-                        <a href="pages/nosotros.html">Sobre nosotros</a>
+                    <button type="button" class="btn bordeCurvo btn-secondary">
+                        <a class="text-white" href="pages/nosotros.html">Sobre nosotros</a>
                     </button>
                     <video src="assets/img/disfrutapatagonia.mp4" muted autoplay loop></video>
                 </article>
@@ -244,52 +266,77 @@
             <!------------------- INICIO SECTION GALERIA ------------------->
         
             <section>
-                <article class="section__texto">
-                    <h2 class="section__titulo textoCentrado bordeCurvo">
+                <article class="container galeria__container">
+                    <div class="row justify-content-center">
+                    <h2 class="textoCentrado bordeCurvo col-lg-12">
                         Galeria
                     </h2>
-                    <div class="carrusel__galeria">
-                        <ul>
-                            <li>
-                                <img src="assets/img/galeria0.jpg" alt="piscina">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria1.jpg" alt="restaurante">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria2.jpg" alt="buffet">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria3.jpg" alt="recepcion">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria4.jpg" alt="buffet">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria5.jpg" alt="paisaje">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria6.jpg" alt="lago">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria7.jpg" alt="jacuzzi">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria8.jpg" alt="spa">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria9.jpg" alt="sauna">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria10.jpg" alt="muelle">
-                            </li>
-                            <li>
-                                <img src="assets/img/galeria11.jpg" alt="ciudad">
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
+                    
+                    <div id="carouselExampleIndicators" class="carousel slide col-lg-8" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/img/galeria0.jpg" class="d-block w-100" alt="piscina">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria1.jpg" class="d-block w-100" alt="restaurante">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria2.jpg" class="d-block w-100" alt="buffet">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria3.jpg" class="d-block w-100" alt="recepcion">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria4.jpg" class="d-block w-100" alt="buffet">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria5.jpg" class="d-block w-100" alt="paisaje">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria6.jpg" class="d-block w-100" alt="lago">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria7.jpg" class="d-block w-100" alt="jacuzzi">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria8.jpg" class="d-block w-100" alt="spa">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria9.jpg" class="d-block w-100" alt="sauna">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria10.jpg" class="d-block w-100" alt="muelle">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/galeria11.jpg" class="d-block w-100" alt="ciudad">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Antes</span>
+                </button>
+            </div>
+            </div>
+        </article>
+    </section>
         
             <!------------------- FIN SECTION GALERIA ------------------->
         
@@ -305,25 +352,27 @@
                             <h2 class="section__titulo textoCentrado bordeCurvo">
                                 Contacto
                             </h2>
-                            <form action="" class="form__columna">
-                                <div class="form__item">
-                                    <label for="Nombre">Nombre</label>
-                                    <input type="text" name="nombre">
+                            <div class="container">
+                                <div class="row">
+                                <form class="form__column">
+                                  <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
                                 </div>
-                                <div class="form__item">
-                                    <label for="Email">Email</label>
-                                    <input type="email" name="email">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com">
                                 </div>
-                                <div class="form__item">
-                                    <label for="Consulta">Consulta</label>
-                                    <textarea name="consulta" cols="40" rows="3">Escribir mensaje</textarea>
+                                <div class="form-group">
+                                    <label for="consulta">Consulta</label>
+                                    <textarea class="form-control" id="consulta" rows="2" cols="40"></textarea>
                                 </div>
-                                <div class="form__item">
-                                    <input type="reset" value="Limpiar" class="btn bordeCurvo">
-                                    <input type="submit" value="Enviar" class="btn bordeCurvo">
-                                </div>
+                                <button type="submit" class="btn btn-secondary text-white">Enviar</button>
                             </form>
                         </div>
+                        </div>
+
+                    </div>
                         <div>
                             <ul class="datos__contacto">
                                 <li class="textoCentrado">
@@ -373,11 +422,12 @@
         
         <!------------------- INICIO DE FOOTER ------------------->
         <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </footer>
     </div>
     <!------------------- FIN DE FOOTER ------------------->
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -82,6 +82,18 @@ ul{
     filter: opacity(60%);
 }
 
+.gradianteAbajo {
+    background-image: linear-gradient(to bottom, #F3F3F3, white);
+}
+
+.gradianteArriba {
+    background-image: linear-gradient(to top, #F3F3F3, white);
+}
+
+.fondoblanco {
+    background-color: white;
+}
+
 /*****************+* MOBILE ********************/
 
 @media screen and (max-width: 1024px) {
@@ -135,6 +147,7 @@ footer {
 }
 
 
+
 /* Nav */
 
 
@@ -175,6 +188,7 @@ nav li {
 nav ul li a {
     text-decoration: none;
 }
+
 
 
 /* Portada */
@@ -254,9 +268,6 @@ nav ul li a {
 
 /* Main nosotros */
 
-.gradianteAbajo__mobile {
-    background-image: linear-gradient(to bottom, #C5B1Aa, white);
-}
 
 .content__nosotros {
     display: flex;
@@ -378,8 +389,7 @@ nav ul li a {
 }
 
 .section__titulo {
-    background-color: #F3F3F3;
-    box-shadow: 4px 4px 3px rgba(0,0,0,.25);
+   border-bottom: solid 3px white;
     margin: 25px 0px;
     width: 200px;
 }
@@ -474,7 +484,7 @@ form input , select, textarea {
 }
 
 .datos__contacto {
-    margin: 25px;
+    padding: 25px;
 }
 
 /* Main actividad */
@@ -619,7 +629,7 @@ footer p {
 }
 
 
-/*****************+* DESKTOP ********************/
+/****************** DESKTOP ********************/
 
 
 @media screen and (min-width: 1025px) {
@@ -939,7 +949,6 @@ nav ul li a {
 .section__texto {
     width: 40%;
     padding: 40px;
-    background-color: white;
 }
 
 .section__titulo {
@@ -1017,7 +1026,7 @@ form input , select, textarea {
 
 .img__contacto {
     width: 100%;
-    height: 650px;
+    height: 670px;
     object-fit: cover;
 }
 
@@ -1030,13 +1039,13 @@ form input , select, textarea {
 }
 
 .datos__contacto {
-    margin: 5px;
+    padding: 5px;
 }
 
 /* Main actividad */
 
 .actividades {
-    margin: 150px 0px 20px 0px;
+    padding: 150px 0px 20px 0px;
     display: flex;
     flex-direction: row;
 }

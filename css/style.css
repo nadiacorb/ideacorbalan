@@ -357,7 +357,7 @@ nav ul li a {
 }
 
 .servicios ul li {
-    width: 100px;
+    width: 80px;
     margin: 10px;
 }
 
@@ -373,14 +373,14 @@ nav ul li a {
 }
 
 .section__texto {
-    width: 75%;
+    width: 100%;
     padding: 30px;
 }
 
 .section__titulo {
     background-color: #F3F3F3;
     box-shadow: 4px 4px 3px rgba(0,0,0,.25);
-    margin-bottom: 25px;
+    margin: 25px 0px;
     width: 200px;
 }
 
@@ -410,6 +410,7 @@ nav ul li a {
     background-color: #F3F3F3;
     padding: 15px;
     height: 550px;
+    margin-top: 25px;
 }
 
 .formulario h2 {
@@ -540,6 +541,7 @@ form input , select, textarea {
 
 .habitacion__item ul li img {
     width: 25px;
+    height: 25px;
     margin-right: 15px;
 }
 
@@ -611,7 +613,7 @@ footer {
 
 footer p {
     text-align: center;
-    margin: 0px 15px;
+    margin: 15px 15px;
 }
 
 }
@@ -941,9 +943,8 @@ nav ul li a {
 }
 
 .section__titulo {
-    background-color: #F3F3F3;
-    box-shadow: 4px 4px 3px rgba(0,0,0,.25);
-    margin-bottom: 25px;
+    border-bottom: solid 3px white;
+    margin: 5px 0px 20px 0px;
 }
 
 .habitaciones__equipamiento ul {
@@ -1200,5 +1201,10 @@ footer {
     align-items: center;
     justify-content: center;
 }
-    
+
+footer p {
+    text-align: center;
+    margin: 25px 15px;
+}
+
 }

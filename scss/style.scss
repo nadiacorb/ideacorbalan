@@ -1074,6 +1074,7 @@ form input , select, textarea {
     width: 60%;
 }
 
+
 .actividades__detalle {
     margin: 150px 50px;
     display: flex;
@@ -1213,12 +1214,18 @@ form input , select, textarea {
 
 /* Footer */
 
+$estilosfooter: (
+    background: #0D0C10,
+    display-f: flex,
+    align: center,
+    justify-content: center,
+);
+
 footer {
-    background-color: #0D0C10;
-    background-color: #0D0C10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: map-get($estilosfooter,background);
+    display: map-get($estilosfooter,display-f);
+    align-items: map-get($estilosfooter,align);
+    justify-content: map-get($estilosfooter,justify-content);
 }
 
 footer p {

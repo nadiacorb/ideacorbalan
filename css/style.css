@@ -74,6 +74,9 @@ ul {
 .fondoblanco {
   background-color: white; }
 
+.btnadelante {
+  z-index: 900; }
+
 /****************** MOBILE ********************/
 /* GENERAL */
 .btn, .btn--reset {

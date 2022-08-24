@@ -53,7 +53,7 @@ a {
 .uppercase {
   text-transform: uppercase; }
 
-.btn a {
+.btn a, .btn--reset a {
   text-decoration: none; }
 
 ul {
@@ -75,20 +75,25 @@ ul {
   background-color: white; }
 
 /****************** MOBILE ********************/
+/* GENERAL */
+.btn, .btn--reset {
+  width: 120px;
+  height: 30px;
+  background-color: #C5B4AE;
+  border: none;
+  margin: 20px 3px 0px 0px;
+  transition: all 2s;
+  color: #F3F3F3;
+  font-size: 18px;
+  font-weight: 500; }
+
+.btn:hover, .btn--reset:hover {
+  background-color: #856C5B; }
+
+.btn--reset {
+  background-color: #C5B4EE; }
+
 @media screen and (max-width: 1024px) {
-  /* GENERAL */
-  .btn {
-    width: 120px;
-    height: 30px;
-    background-color: #C5B4AE;
-    border: none;
-    margin: 20px 3px 0px 0px;
-    transition: all 2s;
-    color: #F3F3F3;
-    font-size: 18px;
-    font-weight: 500; }
-  .btn:hover {
-    background-color: #856C5B; }
   /* GRID */
   #grid {
     display: grid;
@@ -285,7 +290,8 @@ ul {
     margin-bottom: 10px;
     margin-left: 30px; }
   .form__item {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    display: flex; }
   form {
     margin: 15px 30px;
     display: flex;
@@ -406,7 +412,7 @@ ul {
 /****************** DESKTOP ********************/
 @media screen and (min-width: 1025px) {
   /* GENERAL */
-  .btn {
+  .btn, .btn--reset {
     width: 150px;
     height: 40px;
     background-color: #C5B4AE;
@@ -416,7 +422,7 @@ ul {
     color: #F3F3F3;
     font-size: 18px;
     font-weight: 500; }
-  .btn:hover {
+  .btn:hover, .btn--reset:hover {
     background-color: #856C5B; }
   .gradianteAbajo__desktop {
     background-image: linear-gradient(to bottom, #F3F3F3, white); }

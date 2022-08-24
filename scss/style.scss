@@ -100,7 +100,6 @@ ul{
 
 /****************** MOBILE ********************/
 
-@media screen and (max-width: 1024px) {
    
 /* GENERAL */
     
@@ -119,6 +118,13 @@ ul{
 .btn:hover {
     background-color: #856C5B;
 }
+
+.btn--reset {
+@extend .btn;
+background-color: #C5B4EE;
+}
+
+@media screen and (max-width: 1024px) {
     
 /* GRID */
     
@@ -439,6 +445,7 @@ background-attachment: $background-attachment;
 
 .form__item {
     margin-bottom: 10px;
+    display: flex;
 }
 
 form {

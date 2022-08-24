@@ -91,16 +91,13 @@ ul {
   background-color: #856C5B; }
 
 .btn--reset {
-  background-color: #C5B4EE; }
+  background-color: #C5B4AE; }
 
 @media screen and (max-width: 1024px) {
   /* GRID */
   #grid {
     display: grid;
-    grid-template-areas: "header header"
- "nav nav"
- "main main"
- "footer footer";
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 20px 1fr 80px; }
   header {
@@ -404,7 +401,6 @@ ul {
   /* Footer */
   footer {
     background-color: #0D0C10;
-    background-color: #0D0C10;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -432,9 +428,7 @@ ul {
   /* GRID */
   #grid {
     display: grid;
-    grid-template-areas: "header nav"
- "main main"
- "footer footer";
+    grid-template-areas: "header nav" "main main" "footer footer";
     grid-template-columns: 150px 1fr;
     grid-template-rows: 50px 1fr 80px; }
   header {

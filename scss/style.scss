@@ -232,7 +232,7 @@ background-attachment: $background-attachment;
 
 
 .portada__nosotros {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headernosotros.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headernosotros.png);
     background-position: 10% 70%;
     @include fixed(cover, fixed);
     height: 550px;
@@ -240,7 +240,7 @@ background-attachment: $background-attachment;
 }
 
 .portada__actividades {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headeractividades.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headeractividades.png);
     background-position: 10% 70%;
     @include fixed(cover, fixed);
     height: 550px;
@@ -248,7 +248,7 @@ background-attachment: $background-attachment;
 }
 
 .portada__habitaciones {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headerhabitaciones.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headerhabitaciones.png);
     background-position: 70% 10%;
     @include fixed(cover, fixed);
     height: 550px;
@@ -256,7 +256,7 @@ background-attachment: $background-attachment;
 }
 
 .portada__contacto {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headercontacto.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headercontacto.png);
     background-position: 10% 70%;
     @include fixed(cover, fixed);
     height: 550px;
@@ -264,7 +264,7 @@ background-attachment: $background-attachment;
 }
 
 .portada__index {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/header1.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/header1.png);
     background-position: 10% 40%;
     @include fixed(cover, fixed);
 }
@@ -770,35 +770,35 @@ nav ul li a {
 }
 
 .portada__nosotros {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headernosotros.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headernosotros.png);
     background-position: 10% 70%;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .portada__actividades {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headeractividades.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headeractividades.png);
     background-position: 10% 70%;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .portada__habitaciones {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headerhabitaciones.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headerhabitaciones.png);
     background-position: 10% 70%;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .portada__contacto {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headercontacto.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/headercontacto.png);
     background-position: 10% 70%;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .portada__index {
-    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/header1.jpg);
+    background-image: linear-gradient(rgba(13, 12, 16, 0.46), rgba(13, 12, 16, 0.46)), url(../assets/img/header1.png);
     background-position: 10% 40%;
     background-size: cover;
     background-attachment: fixed;
